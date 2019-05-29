@@ -1,11 +1,80 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>CV - Portfolio</title>
+	<title>Rajith Profile</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: rgb(248, 163, 4);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(235, 32, 32);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(235, 32, 32);
+  color: rgb(248, 163, 4);
+}
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<body>
+
+<div class="topnav">
+  <a class="smoothscroll" class="active" href="#home">Home</a>
+  <a class="smoothscroll" href="#education">EDUCATION</a>
+  <a class="smoothscroll" href="#gallery">GALLERY</a>
+  <a class="smoothscroll" href="#experience">EXPERIENCE</a>
+  <a class="smoothscroll" href="#aboutme">ABOUT ME</a>
+  <a class="smoothscroll" href="#contactme">CONTACT ME</a>
+  <a class="smoothscroll" href="#downloardcv">DOWNLOARD CV</a>
+</div>
 	
 	<!-- Font -->
 	
@@ -26,6 +95,8 @@
 </head>
 <body>
 	
+		<section id="home">
+	<section id="home">
 	<section class="intro-section">
 		<div class="container">
 		
@@ -74,7 +145,7 @@
 					
 					<div class="col-sm-10 col-md-5 col-lg-6">		
 							<h2><b>RAJITH KARUNARATHNE</b></h2>
-							<h4 class="font-yellow">EnergeticLeader with thirst for Innovation</h4>
+							<h4 class="font-yellow">Energetic Leader with thirst for Innovation</h4>
 							<ul class="information margin-tb-30">
 								<li><b class="font-yellow">BORN</b> : December 09, 1994</li>
 								<li><b class="font-yellow">EMAIL</b> : rajithkarunarathne@gmail.com</li>
@@ -99,7 +170,7 @@
 		</div><!-- container -->
 	</section><!-- intro-section -->
 	
-	
+	<section id="aboutme">
 	<section class="about-section section">
 		<div class="container">
 			<div class="row">
@@ -162,6 +233,8 @@
 		</div><!-- container -->
 	</section><!-- about-section -->
 	
+
+	<section id="experience">
 	<section class="experience-section section">
 		<div class="container">
 			<div class="row">
@@ -219,12 +292,13 @@
 		</div><!-- container -->
 	</section><!-- experience-section -->
 	
+	<section id="gallery">
 	<section class="portfolio-section section">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
 					<div class="heading">
-						<h3><b>Portfolio</b></h3>
+						<h3><b>Gallery</b></h3>
 						<h6 class="font-lite-black"><b>MY WORK</b></h6>
 					</div>
 				</div><!-- col-sm-3 -->
@@ -347,7 +421,7 @@
 		</div><!-- container -->
 	</section><!-- portfolio-section -->
 	
-	
+	<section id="education">
 	<section class="education-section section">
 		<div class="container">
 			<div class="row">
@@ -421,6 +495,7 @@
 						<h5 class="desc"><b>Satisfied Clients</b></h5>
 					</div><!-- counter -->
 				</div><!-- col-md-3-->
+
 				
 				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="counter margin-b-30">
